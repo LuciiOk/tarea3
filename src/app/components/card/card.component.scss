@@ -1,0 +1,36 @@
+$deporte:rgb(158, 0, 0);
+$salud: rgb(0, 0, 136);
+
+.entretenimiento {
+    background-color: green;
+    color: aliceblue;
+}
+
+.mundo {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.deporte {
+    background-color: $deporte;
+    color: aliceblue;
+}
+
+.economia {
+    background-color: violet;
+    color: aliceblue;
+}
+
+.salud {
+    background-color: $salud;
+    color: aliceblue;
+}
+
+.tecnologia {
+    background-color: red;
+    color: aliceblue;
+}
+
+.card {
+    border-radius: 0;
+}
