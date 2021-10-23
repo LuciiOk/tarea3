@@ -1,50 +1,66 @@
 export interface News {
+    id:number,
     titulo:string,
     descripcion:string,
+    contenido:string,
     img:string,
     categoria:string
 }
 
 export let noticias:News[] = [
     {
+        id:1,
         titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
-        descripcion: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: '',
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
         categoria: 'entretenimiento'
     },
     {
+        id:2,
         titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
-        descripcion: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: '',
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: 'salud'
+        categoria: 'entretenimiento'
     },
     {
+        id:3,
         titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
-        descripcion: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: '',
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: 'deporte'
+        categoria: 'entretenimiento'
     },
     {
-        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
-        descripcion: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
-        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: ''
-    },
-    {
-        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
-        descripcion: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
-        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: ''
-    },
-    {
-        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
-        descripcion: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
+        id:4,
+        titulo: 'Noticia',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: '',
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
         categoria: ''
     },
     {
-        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
-        descripcion: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
+        id:4,
+        titulo: 'Noticia',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: '',
+        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        categoria: ''
+    },
+    {
+        id:5,
+        titulo: 'Noticia',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: '',
+        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        categoria: ''
+    },
+    {
+        id:6,
+        titulo: 'Noticia',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: '',
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
         categoria: ''
     },

@@ -10,6 +10,8 @@ import { NewsComponent } from './pages/news/news.component';
 import { CustomerServiceComponent } from './pages/customer-service/customer-service.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NoticiaComponent } from './pages/noticia/noticia.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { FooterComponent } from './components/footer/footer.component';
     NewsComponent,
     CustomerServiceComponent,
     CarouselComponent,
-    FooterComponent
+    FooterComponent,
+    NoticiaComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

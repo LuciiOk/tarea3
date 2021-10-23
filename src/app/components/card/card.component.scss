@@ -1,36 +1,98 @@
 $deporte:rgb(158, 0, 0);
 $salud: rgb(0, 0, 136);
 
+h5 {
+    text-align: center;
+    font-weight: bold;
+    color: #a0a0a0ab;
+}
+
+.normal {
+    background-color: white;
+    border: solid 2px #ccc;
+}
+
 .entretenimiento {
     background-color: green;
     color: aliceblue;
+    border: none
 }
 
 .mundo {
     background-color: blue;
     color: aliceblue;
+    border: none
 }
 
 .deporte {
     background-color: $deporte;
     color: aliceblue;
+    border: none
 }
 
 .economia {
     background-color: violet;
     color: aliceblue;
+    border: none;
 }
 
 .salud {
     background-color: $salud;
     color: aliceblue;
+    border: none;
 }
 
 .tecnologia {
     background-color: red;
     color: aliceblue;
+    border: none;
+}
+
+.hentretenimiento {
+    color: green;
+    text-align: left;
+}
+
+.hmundo {
+    color: blue;
+    text-align: left;
+}
+
+.hdeporte {
+    color: $deporte;
+    text-align: left;
+}
+
+.heconomia {
+    color: violet;
+    text-align: left;
+}
+
+.hsalud {
+    color: $salud;
+    text-align: left;
+}
+
+.htecnologia {
+    color: red;
+    text-align: left;
 }
 
 .card {
     border-radius: 0;
+    background-color: #eeeeee;
+    border: none;
+}
+
+.card img {
+    border-radius: 0;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+p {
+    font-size: 15px;
+    text-align: left;
 }

@@ -1,19 +1,86 @@
 <div class="container mt-4">
     <h2>Contactanos:</h2>
-    <form class="needs-validaton" novalidate>
-        <label for="nombre-completo" class="form-label">Nombre Completo</label>
-        <input type="text"  id="nombre-completo" class="form-control" placeholder="nombre completo" required>
-        <label for="telefono" class="form-label">Telefono</label>
-        <input type="tel"  id="telefono" class="form-control" placeholder="Telefono" required>
+    <form [formGroup]="formulario" class="needs-validaton" novalidate>
+
+        <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+        <input type="text"  id="nombreCompleto" class="form-control" formControlName="nombreCompleto" placeholder="Nombre completo"
+          [ngClass]="{ 'is-invalid': formulario.controls['nombreCompleto'].invalid && (formulario.controls['nombreCompleto'].dirty || formulario.controls['nombreCompleto'].touched),
+          'is-valid': formulario.controls['nombreCompleto'].valid && (formulario.controls['nombreCompleto'].dirty || formulario.controls['nombreCompleto'].touched)}"
+        >
+
+        <div *ngIf="formulario.controls['nombreCompleto'].invalid && (formulario.controls['nombreCompleto'].dirty || formulario.controls['nombreCompleto'].touched)" class="invalid-feedback">
+            <div *ngIf="formulario.controls['nombreCompleto'].hasError('required')">
+              * El nombre obligatorio
+            </div> 
+        </div>
+
+        <label for="telefono" class="form-label">Télefono</label>
+        <input type="text" id="telefono" formControlName="telefono" class="form-control" placeholder="Telefono"
+          [ngClass]="{'is-invalid': formulario.controls['telefono'].invalid && (formulario.controls['telefono'].dirty || formulario.controls['telefono'].touched), 
+          'is-valid': formulario.controls['telefono'].valid && (formulario.controls['telefono'].dirty || formulario.controls['telefono'].touched)}"
+         >
+        <div *ngIf="formulario.controls['telefono'].invalid && (formulario.controls['telefono'].dirty || formulario.controls['telefono'].touched)" class="invalid-feedback">
+          <div *ngIf="formulario.controls['telefono'].hasError('required')">
+            * El número de télefono es obligatorio
+          </div>
+          <div *ngIf="formulario.controls['telefono'].hasError('pattern')">
+            * Ingrese solo números
+          </div> 
+          <div *ngIf="formulario.controls['telefono'].hasError('maxlength')">
+            * Tamaño máximo de 9
+          </div>
+          <div *ngIf="formulario.controls['telefono'].hasError('minlength')">
+            * Tamaño mínimo de 9
+          </div>
+        </div>
+
         <label for="e-mail" class="form-label">Correo Electronico</label>
-        <input type="text"  id="e-mail" class="form-control" placeholder="correo electronico" required>
+        <input type="text"  id="Email" formControlName="Email" class="form-control" placeholder="Correo electronico"
+          [ngClass]="{ 'is-invalid': formulario.controls['Email'].invalid && (formulario.controls['Email'].dirty || formulario.controls['Email'].touched),'is-valid': formulario.controls['Email'].valid && (formulario.controls['Email'].dirty || formulario.controls['Email'].touched)}"
+        >
+
+        <div *ngIf="formulario.controls['Email'].invalid && (formulario.controls['Email'].dirty || formulario.controls['Email'].touched)" class="invalid-feedback">
+          <div *ngIf="formulario.controls['Email'].hasError('required')">
+            * El Email es obligatorio
+          </div>
+          <div *ngIf="formulario.controls['Email'].hasError('email')">
+            * Ingresa un email valido
+          </div>
+        </div>
         <label for="dirigido">Dirigido a:</label>
-        <select class="form-select" id="dirigido" required>
-            <option> Selecciona una opcion</option>
+        <select class="form-select" id="dirigido" formControlName="dirigido" 
+          [ngClass]="{'is-invalid': formulario.controls['dirigido'].invalid && (formulario.controls['dirigido'].dirty || formulario.controls['dirigido'].touched)
+          , 'is-valid': formulario.controls['dirigido'].valid && (formulario.controls['dirigido'].dirty || formulario.controls['dirigido'].touched)}"
+        >
+          <option value=""> Selecciona una opcion</option>
+          <option value="contenidos"> Contenidos</option>
+          <option value="publicidad"> Publicidad</option>
+          <option value="sugerencias"> Sugerencias</option>
+          <option value="suscripciones"> suscripciones digitales</option>
         </select>
+        <div *ngIf="formulario.controls['dirigido'].invalid && (formulario.controls['dirigido'].dirty || formulario.controls['dirigido'].touched)" class="invalid-feedback">
+          <div *ngIf="formulario.controls['dirigido'].hasError('required')">
+            * Selecciona una opción
+          </div>
+        </div>  
+
         <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea name="" id="mensaje" class="form-control" required>
-        </textarea>
-        <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+        <textarea name="" id="mensaje" formControlName="mensaje" class="form-control" placeholder="Escribe un mensaje..." rows="8"
+          [ngClass]="{'is-invalid': formulario.controls['mensaje'].invalid && (formulario.controls['mensaje'].dirty || formulario.controls['mensaje'].touched), 
+          'is-valid': formulario.controls['mensaje'].valid && (formulario.controls['mensaje'].dirty || formulario.controls['mensaje'].touched)}"
+        ></textarea>
+        <div *ngIf="formulario.controls['mensaje'].invalid && (formulario.controls['mensaje'].dirty || formulario.controls['mensaje'].touched)" class="invalid-feedback">
+          <div *ngIf="formulario.controls['mensaje'].hasError('required')">
+            * El mensaje es obligatorio
+          </div>
+        </div>  
+
+        <div class="container">
+          <div class="row text-center">
+              <div class="col-12 text-center">
+                <button type="submit" [disabled]="!formulario.valid" class="col-12 col-sm-5 btn-lg btn btn-block btn-dark mt-4">Enviar</button>
+              </div>
+          </div>
+        </div>
     </form>
 </div>
