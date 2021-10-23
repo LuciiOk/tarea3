@@ -1,8 +1,14 @@
-<div class="container mt-5">
-    <h1>{{noticia.titulo}}</h1>
-    <span></span>
-    <img src="{{noticia.img}}" alt="">
-    <p>
+<div class="container mt-3 ">
+    <h1 class="text-center">{{noticia.titulo}}</h1>
+    <span class="d-block float-right text-muted">{{noticia.fecha}} - {{noticia.autor}}</span>
+    <p class="text-muted    ">
         {{noticia.descripcion}}
     </p>
+    <div class="text-center">
+        <img src="{{noticia.img}}" alt="{{noticia.titulo}}">
+    </div>
+    <div class="contenido mt-3">
+        <p class="text-left" [innerHTML]="noticia.contenido"></p>
+    </div>
+       
 </div>
