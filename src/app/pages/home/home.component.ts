@@ -7,7 +7,7 @@ import {News, noticias} from '../../interfaces/news'
 })
 export class HomeComponent implements OnInit {
  
-  noticias:News[] = noticias;
+  notici:News[] = noticias;
   noticiasDifCat:News[] = [];
   noticiasCat:News[] = [];
 
@@ -16,9 +16,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.noticias)
-    this.noticiasDifCat = noticias.filter((noticia:News)=> noticia.categoria === 0);
-    this.noticiasCat = noticias.filter((noticia:News)=> noticia.categoria !== 0);
+    console.log(this.notici)
+
   }
 
 }
