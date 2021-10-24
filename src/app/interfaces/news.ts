@@ -6,7 +6,7 @@ export interface News {
     descripcion:string,
     contenido:string,
     img:string,
-    categoria:string
+    categoria:number
 }
 
 export let noticias:News[] = [
@@ -24,7 +24,7 @@ export let noticias:News[] = [
         Nullam vitae erat sapien. Nullam sed sapien euismod, blandit nisi quis, hendrerit diam. Nulla sit amet odio condimentum, pretium ante posuere, fermentum purus. Curabitur tincidunt aliquam nulla, in rhoncus massa maximus id. Etiam ac lorem mollis, ultrices orci ac, ultricies justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus hendrerit facilisis lorem eleifend vulputate. Proin quam risus, vehicula a placerat vel, consequat id lorem. Cras vitae nulla porta eros fermentum sodales sed in orci. Etiam id sem molestie, luctus quam sed, faucibus dolor. Cras purus eros, aliquet at odio rutrum, feugiat dignissim nibh. Curabitur erat felis, gravida sed faucibus vitae, pulvinar vitae quam. Nulla hendrerit diam lectus, a porttitor nibh semper ac.<br/><br/>
         Fusce vestibulum maximus hendrerit. Quisque eleifend velit vel ipsum rhoncus tincidunt. Etiam massa augue, consequat non dignissim vel, blandit id ex. Nam sed mattis lacus, in mollis mi. Phasellus suscipit, quam ac dignissim blandit, eros elit suscipit ex, nec cursus tellus mi eu ligula. Mauris scelerisque, nulla vel iaculis consectetur, lorem leo suscipit dolor, vel varius lorem mi nec urna. Proin.<br/><br/> `,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: 'deporte'
+        categoria: 2
     },
     {
         id:2,
@@ -40,7 +40,7 @@ export let noticias:News[] = [
         Nullam vitae erat sapien. Nullam sed sapien euismod, blandit nisi quis, hendrerit diam. Nulla sit amet odio condimentum, pretium ante posuere, fermentum purus. Curabitur tincidunt aliquam nulla, in rhoncus massa maximus id. Etiam ac lorem mollis, ultrices orci ac, ultricies justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus hendrerit facilisis lorem eleifend vulputate. Proin quam risus, vehicula a placerat vel, consequat id lorem. Cras vitae nulla porta eros fermentum sodales sed in orci. Etiam id sem molestie, luctus quam sed, faucibus dolor. Cras purus eros, aliquet at odio rutrum, feugiat dignissim nibh. Curabitur erat felis, gravida sed faucibus vitae, pulvinar vitae quam. Nulla hendrerit diam lectus, a porttitor nibh semper ac.<br/><br/>
         Fusce vestibulum maximus hendrerit. Quisque eleifend velit vel ipsum rhoncus tincidunt. Etiam massa augue, consequat non dignissim vel, blandit id ex. Nam sed mattis lacus, in mollis mi. Phasellus suscipit, quam ac dignissim blandit, eros elit suscipit ex, nec cursus tellus mi eu ligula. Mauris scelerisque, nulla vel iaculis consectetur, lorem leo suscipit dolor, vel varius lorem mi nec urna. Proin.<br/><br/> `,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: 'mundo'
+        categoria: 2
     },
     {
         id:3,
@@ -56,7 +56,7 @@ export let noticias:News[] = [
         Nullam vitae erat sapien. Nullam sed sapien euismod, blandit nisi quis, hendrerit diam. Nulla sit amet odio condimentum, pretium ante posuere, fermentum purus. Curabitur tincidunt aliquam nulla, in rhoncus massa maximus id. Etiam ac lorem mollis, ultrices orci ac, ultricies justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus hendrerit facilisis lorem eleifend vulputate. Proin quam risus, vehicula a placerat vel, consequat id lorem. Cras vitae nulla porta eros fermentum sodales sed in orci. Etiam id sem molestie, luctus quam sed, faucibus dolor. Cras purus eros, aliquet at odio rutrum, feugiat dignissim nibh. Curabitur erat felis, gravida sed faucibus vitae, pulvinar vitae quam. Nulla hendrerit diam lectus, a porttitor nibh semper ac.<br/><br/>
         Fusce vestibulum maximus hendrerit. Quisque eleifend velit vel ipsum rhoncus tincidunt. Etiam massa augue, consequat non dignissim vel, blandit id ex. Nam sed mattis lacus, in mollis mi. Phasellus suscipit, quam ac dignissim blandit, eros elit suscipit ex, nec cursus tellus mi eu ligula. Mauris scelerisque, nulla vel iaculis consectetur, lorem leo suscipit dolor, vel varius lorem mi nec urna. Proin.<br/><br/> `,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: 'tecnologia'
+        categoria: 3
     },
     {
         id:4,
@@ -72,7 +72,7 @@ export let noticias:News[] = [
         Nullam vitae erat sapien. Nullam sed sapien euismod, blandit nisi quis, hendrerit diam. Nulla sit amet odio condimentum, pretium ante posuere, fermentum purus. Curabitur tincidunt aliquam nulla, in rhoncus massa maximus id. Etiam ac lorem mollis, ultrices orci ac, ultricies justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus hendrerit facilisis lorem eleifend vulputate. Proin quam risus, vehicula a placerat vel, consequat id lorem. Cras vitae nulla porta eros fermentum sodales sed in orci. Etiam id sem molestie, luctus quam sed, faucibus dolor. Cras purus eros, aliquet at odio rutrum, feugiat dignissim nibh. Curabitur erat felis, gravida sed faucibus vitae, pulvinar vitae quam. Nulla hendrerit diam lectus, a porttitor nibh semper ac.<br/><br/>
         Fusce vestibulum maximus hendrerit. Quisque eleifend velit vel ipsum rhoncus tincidunt. Etiam massa augue, consequat non dignissim vel, blandit id ex. Nam sed mattis lacus, in mollis mi. Phasellus suscipit, quam ac dignissim blandit, eros elit suscipit ex, nec cursus tellus mi eu ligula. Mauris scelerisque, nulla vel iaculis consectetur, lorem leo suscipit dolor, vel varius lorem mi nec urna. Proin.<br/><br/> `,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: ''
+        categoria: 0
     },
     {
         id:4,
@@ -88,7 +88,7 @@ export let noticias:News[] = [
         Nullam vitae erat sapien. Nullam sed sapien euismod, blandit nisi quis, hendrerit diam. Nulla sit amet odio condimentum, pretium ante posuere, fermentum purus. Curabitur tincidunt aliquam nulla, in rhoncus massa maximus id. Etiam ac lorem mollis, ultrices orci ac, ultricies justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus hendrerit facilisis lorem eleifend vulputate. Proin quam risus, vehicula a placerat vel, consequat id lorem. Cras vitae nulla porta eros fermentum sodales sed in orci. Etiam id sem molestie, luctus quam sed, faucibus dolor. Cras purus eros, aliquet at odio rutrum, feugiat dignissim nibh. Curabitur erat felis, gravida sed faucibus vitae, pulvinar vitae quam. Nulla hendrerit diam lectus, a porttitor nibh semper ac.<br/><br/>
         Fusce vestibulum maximus hendrerit. Quisque eleifend velit vel ipsum rhoncus tincidunt. Etiam massa augue, consequat non dignissim vel, blandit id ex. Nam sed mattis lacus, in mollis mi. Phasellus suscipit, quam ac dignissim blandit, eros elit suscipit ex, nec cursus tellus mi eu ligula. Mauris scelerisque, nulla vel iaculis consectetur, lorem leo suscipit dolor, vel varius lorem mi nec urna. Proin.<br/><br/> `,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: ''
+        categoria: 0
     },
     {
         id:5,
@@ -104,7 +104,7 @@ export let noticias:News[] = [
         Nullam vitae erat sapien. Nullam sed sapien euismod, blandit nisi quis, hendrerit diam. Nulla sit amet odio condimentum, pretium ante posuere, fermentum purus. Curabitur tincidunt aliquam nulla, in rhoncus massa maximus id. Etiam ac lorem mollis, ultrices orci ac, ultricies justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus hendrerit facilisis lorem eleifend vulputate. Proin quam risus, vehicula a placerat vel, consequat id lorem. Cras vitae nulla porta eros fermentum sodales sed in orci. Etiam id sem molestie, luctus quam sed, faucibus dolor. Cras purus eros, aliquet at odio rutrum, feugiat dignissim nibh. Curabitur erat felis, gravida sed faucibus vitae, pulvinar vitae quam. Nulla hendrerit diam lectus, a porttitor nibh semper ac.<br/><br/>
         Fusce vestibulum maximus hendrerit. Quisque eleifend velit vel ipsum rhoncus tincidunt. Etiam massa augue, consequat non dignissim vel, blandit id ex. Nam sed mattis lacus, in mollis mi. Phasellus suscipit, quam ac dignissim blandit, eros elit suscipit ex, nec cursus tellus mi eu ligula. Mauris scelerisque, nulla vel iaculis consectetur, lorem leo suscipit dolor, vel varius lorem mi nec urna. Proin.<br/><br/> `,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: ''
+        categoria: 0
     },
     {
         id:6,
@@ -120,6 +120,6 @@ export let noticias:News[] = [
         Nullam vitae erat sapien. Nullam sed sapien euismod, blandit nisi quis, hendrerit diam. Nulla sit amet odio condimentum, pretium ante posuere, fermentum purus. Curabitur tincidunt aliquam nulla, in rhoncus massa maximus id. Etiam ac lorem mollis, ultrices orci ac, ultricies justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus hendrerit facilisis lorem eleifend vulputate. Proin quam risus, vehicula a placerat vel, consequat id lorem. Cras vitae nulla porta eros fermentum sodales sed in orci. Etiam id sem molestie, luctus quam sed, faucibus dolor. Cras purus eros, aliquet at odio rutrum, feugiat dignissim nibh. Curabitur erat felis, gravida sed faucibus vitae, pulvinar vitae quam. Nulla hendrerit diam lectus, a porttitor nibh semper ac.<br/><br/>
         Fusce vestibulum maximus hendrerit. Quisque eleifend velit vel ipsum rhoncus tincidunt. Etiam massa augue, consequat non dignissim vel, blandit id ex. Nam sed mattis lacus, in mollis mi. Phasellus suscipit, quam ac dignissim blandit, eros elit suscipit ex, nec cursus tellus mi eu ligula. Mauris scelerisque, nulla vel iaculis consectetur, lorem leo suscipit dolor, vel varius lorem mi nec urna. Proin.<br/><br/> `,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-        categoria: ''
+        categoria: 0
     },
 ]

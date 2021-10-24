@@ -1,26 +1,9 @@
 <div class="card text-center mt-4 mx-3">
     <img src="{{noticia.img}}" class="card-img-top" alt="{{noticia.titulo}}">
     <div class="card-body ">
-      <h5 class="card-title"
-        [ngClass]="{
-          hentretenimiento: noticia.categoria == 'entretenimiento',
-          hmundo: noticia.categoria == 'mundo',
-          hdeporte: noticia.categoria == 'deporte',
-          heconomia: noticia.categoria == 'economia',
-          hsalud: noticia.categoria == 'salud',
-          htecnologia: noticia.categoria == 'tecnologia'
-        }"
-      >{{noticia.titulo}}</h5>
+      <h5 class="card-title">{{noticia.titulo}}</h5>
       <p class="card-text">{{noticia.descripcion}}</p>
-      <a class="btn normal"
-        [ngClass]="{
-          entretenimiento: noticia.categoria == 'entretenimiento',
-          mundo: noticia.categoria == 'mundo',
-          deporte: noticia.categoria == 'deporte',
-          economia: noticia.categoria == 'economia',
-          salud: noticia.categoria == 'salud',
-          tecnologia: noticia.categoria == 'tecnologia'
-        }"
+      <a class="btn normal {{cat.categoria}}"
         [routerLink]="['/noticia', noticia.id]"
       >Leer Más</a>
     </div>

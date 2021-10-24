@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Categorias, listaCategorias } from 'app/interfaces/categorias';
 
 @Component({
   selector: 'app-card',
@@ -6,15 +7,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
-
-
-  constructor() { }
+  categorias:Categorias[] = listaCategorias; 
+  cat:any;
 
   @Input()
   noticia:any;
 
+  constructor() { }
+  
   ngOnInit(): void {
+    this.cat = this.categorias.find((categoria:Categorias) => this.noticia.categoria = categoria.id)
   }
 
 }

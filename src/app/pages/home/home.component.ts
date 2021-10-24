@@ -16,15 +16,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.noticiasDifCat = noticias.filter((noticia:News)=> 
-      noticia.categoria != 'entretenimiento' && noticia.categoria != 'economia' &&
-      noticia.categoria != 'deporte' && noticia.categoria != 'salud' 
-      && noticia.categoria != 'tecnologia' && noticia.categoria != 'mundo');
-
-    this.noticiasCat = noticias.filter((noticia:News)=> 
-      noticia.categoria == 'entretenimiento' || noticia.categoria == 'economia' ||
-      noticia.categoria == 'deporte' || noticia.categoria == 'salud' 
-      || noticia.categoria == 'tecnologia' || noticia.categoria == 'mundo');
+    console.log(this.noticias)
+    this.noticiasDifCat = noticias.filter((noticia:News)=> noticia.categoria === 0);
+    this.noticiasCat = noticias.filter((noticia:News)=> noticia.categoria !== 0);
   }
 
 }
