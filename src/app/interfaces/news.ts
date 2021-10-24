@@ -47,7 +47,7 @@ export let noticias:News[] = [
         id:3,
         titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
         fecha: '10/11/2021',
-        idcategoria: 3,
+        idcategoria: 6,
         autor: 'Juan Perez',
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: `

@@ -1,6 +1,6 @@
 <div class="container mt-3 ">
     <h1 class="text-center">{{noticia.titulo}}</h1>
-    <span class="d-block float-right text-muted">{{noticia.fecha}} - {{noticia.autor}}</span>
+    <span class="d-block float-right text-muted">{{noticia.fecha}} - {{noticia.autor}} - <b [ngClass]="{rojo: Categoria.color=='rojo', azul: Categoria.color=='azul', verde: Categoria.color=='verde', violeta: Categoria.color=='violeta',rojoOscuro: Categoria.color=='rojo oscuro',azulOscuro: Categoria.color=='azul oscuro'}">{{Categoria.categoria}}</b></span>
     <p class="text-muted    ">
         {{noticia.descripcion}}
     </p>
