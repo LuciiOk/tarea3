@@ -7,15 +7,22 @@ h5 {
     color: #a0a0a0ab;
 }
 
+a:hover {
+    background-color: rgb(0, 0, 0, 0.8); /* Green */
+    color: white;
+}
+
 .normal {
     background-color: white;
     border: solid 2px #ccc;
+    color: black;
 }
 
 .Entretenimiento {
     background-color: green;
     color: aliceblue;
-    border: none
+    border: none;
+    
 }
 
 .Mundo {
