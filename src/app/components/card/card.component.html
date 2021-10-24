@@ -1,10 +1,29 @@
 <div class="card text-center mt-4 mx-3">
-    <img src="{{noticia.img}}" class="card-img-top" alt="{{noticia.titulo}}">
-    <div class="card-body ">
-      <h5 class="card-title">{{noticia.titulo}}</h5>
-      <p class="card-text">{{noticia.descripcion}}</p>
-      <a class="btn normal {{cat.categoria}}"
-        [routerLink]="['/noticia', noticia.id]"
-      >Leer Más</a>
-    </div>
+  <img src="{{noticia.img}}" class="card-img-top" alt="{{noticia.titulo}}">
+  <div class="card-body ">
+    <h5 class="card-title"
+    [ngClass]="{
+      hentretenimiento: cat && cat.color == 'verde' ,
+      hmundo: cat && cat.color == 'azul',
+      hdeporte: cat && cat.color == 'rojo oscuro',
+      heconomia: cat && cat.color == 'violeta',
+      hsalud: cat && cat.color == 'azul oscuro',
+      htecnologia: cat && cat.color == 'rojo',
+      hnormal: !cat
+    }"
+    >{{noticia.titulo}}</h5>
+    <p class="card-text">{{noticia.descripcion}}</p>
+    <a class="btn"
+      [ngClass]="{
+        Entretenimiento: cat && cat.color == 'verde' ,
+        Mundo: cat && cat.color == 'azul',
+        Deporte: cat && cat.color == 'rojo oscuro',
+        Economia: cat && cat.color == 'violeta',
+        Salud: cat && cat.color == 'azul oscuro',
+        Tecnologia: cat && cat.color == 'rojo',
+        Normal: !cat
+      }"
+      [routerLink]="['/noticia', noticia.id]"
+    >Leer Más</a>
+  </div>
 </div>

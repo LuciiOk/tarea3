@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
   constructor() { }
   
   ngOnInit(): void {
-    this.cat = this.categorias.find((categoria:Categorias) => this.noticia.categoria = categoria.id)
+    this.cat = this.categorias.find((categoria:Categorias) => this.noticia.idcategoria == categoria.id)
   }
 
 }

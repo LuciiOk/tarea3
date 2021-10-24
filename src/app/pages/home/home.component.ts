@@ -16,8 +16,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.notici)
-
+    this.noticiasDifCat = this.notici.filter((noticia:News) => noticia.idcategoria == 0);
+    this.noticiasCat = this.notici.filter((noticia:News) => noticia.idcategoria !== 0);
   }
 
 }

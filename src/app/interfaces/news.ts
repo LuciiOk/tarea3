@@ -1,12 +1,13 @@
 export interface News {
     id:number,
+    idcategoria:number,
     titulo:string,
     fecha:string,
     autor:string,
     descripcion:string,
     contenido:string,
     img:string,
-    idcategoria:number
+
 }
 
 export let noticias:News[] = [
@@ -14,7 +15,7 @@ export let noticias:News[] = [
         id:1,
         titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
         fecha: '10/11/2021',
-        idcategoria: 2,
+        idcategoria: 1,
         autor: 'Juan Perez',
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: `
@@ -46,7 +47,7 @@ export let noticias:News[] = [
         id:3,
         titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
         fecha: '10/11/2021',
-        idcategoria: 2,
+        idcategoria: 3,
         autor: 'Juan Perez',
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: `
@@ -62,7 +63,7 @@ export let noticias:News[] = [
         id:4,
         titulo: 'Noticia',
         fecha: '10/11/2021',
-        idcategoria: 2,
+        idcategoria: 0,
         autor: 'Juan Perez',
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: `
@@ -78,7 +79,7 @@ export let noticias:News[] = [
         id:4,
         titulo: 'Noticia',
         fecha: '10/11/2021',
-        idcategoria: 5,
+        idcategoria: 0,
         autor: 'Juan Perez',
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: `
@@ -95,7 +96,7 @@ export let noticias:News[] = [
         id:5,
         titulo: 'Noticia',
         fecha: '10/11/2021',
-        idcategoria: 6,
+        idcategoria: 0,
         autor: 'Juan Perez',
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: `
@@ -112,7 +113,7 @@ export let noticias:News[] = [
         id:6,
         titulo: 'Noticia',
         fecha: '10/11/2021',
-        idcategoria: 7,
+        idcategoria: 0,
         autor: 'Juan Perez',
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: `
