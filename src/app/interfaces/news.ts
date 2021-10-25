@@ -7,7 +7,7 @@ export interface News {
     descripcion:string,
     contenido:string,
     img:string,
-
+    destacado:boolean
 }
 
 const newLocal = `
@@ -27,6 +27,7 @@ export let noticias:News[] = [
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: newLocal,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:true
     },
     {
         id:2,
@@ -37,6 +38,7 @@ export let noticias:News[] = [
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: newLocal,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:true
     },
     {
         id:3,
@@ -47,6 +49,7 @@ export let noticias:News[] = [
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: newLocal,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:true
     },
     {
         id:4,
@@ -57,6 +60,7 @@ export let noticias:News[] = [
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: newLocal,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:false
     },
     {
         id:4,
@@ -67,6 +71,7 @@ export let noticias:News[] = [
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: newLocal,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:false
 
     },
     {
@@ -78,7 +83,7 @@ export let noticias:News[] = [
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: newLocal,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
-
+        destacado:false
     },
     {
         id:6,
@@ -89,5 +94,58 @@ export let noticias:News[] = [
         descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
         contenido: newLocal,
         img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:false
     },
+    {
+        id:7,
+        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
+        fecha: '10/11/2021',
+        idcategoria: 1,
+        autor: 'Juan Perez',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: newLocal,
+        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:true
+    },{
+        id:8,
+        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
+        fecha: '10/11/2021',
+        idcategoria: 1,
+        autor: 'Juan Perez',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: newLocal,
+        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:true
+    },    {
+        id:9,
+        titulo: 'Noticia',
+        fecha: '10/11/2021',
+        idcategoria: 0,
+        autor: 'Juan Perez',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: newLocal,
+        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:false
+    },
+    {
+        id:10,
+        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
+        fecha: '10/11/2021',
+        idcategoria: 1,
+        autor: 'Juan Perez',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: newLocal,
+        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:true
+    },{
+        id:11,
+        titulo: 'El juego de Calamar se convierte en la serie mas vista de netflix',
+        fecha: '10/11/2021',
+        idcategoria: 1,
+        autor: 'Juan Perez',
+        descripcion: 'Cras vitae mauris scelerisque, mattis augue at, molestie sem. In cursus et erat vitae rhoncus. Suspendisse venenatis orci elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam mattis. ',
+        contenido: newLocal,
+        img: 'https://i.blogs.es/100784/1177246/1366_2000.jpeg',
+        destacado:true
+    }
 ]

@@ -1,3 +1,4 @@
+import { not } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import {News, noticias} from '../../interfaces/news'
 @Component({
@@ -16,8 +17,27 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.noticiasDifCat = this.notici.filter((noticia:News) => noticia.idcategoria == 0);
-    this.noticiasCat = this.notici.filter((noticia:News) => noticia.idcategoria !== 0);
+    this.noticiasDifCat = this.separarDiferentesCategorias();
+    this.noticiasCat = this.separarNoticiasDestacadas();
   }
 
+  separarNoticiasDestacadas = ():News[] => {
+    let listaNoticias:News[] = [];
+    this.notici.forEach((element:News) => {
+        if ((element.idcategoria !== 0 && element.destacado == true) && listaNoticias.length < 3) {
+          listaNoticias.push(element);
+        }
+    })
+    return listaNoticias;
+  }
+
+  separarDiferentesCategorias = ():News[] => {
+    let listaNoticias:News[] = [];
+    this.notici.forEach((element:News) => {
+      if ((element.idcategoria === 0) && listaNoticias.length < 4) {
+        listaNoticias.push(element);
+      }
+    })
+    return listaNoticias;
+  }
 }
