@@ -1,11 +1,12 @@
-import { not } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import {News, noticias} from '../../interfaces/news'
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
  
   notici:News[] = noticias;
