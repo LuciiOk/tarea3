@@ -1,6 +1,7 @@
 <div class="container mt-3">
+  <div class="container" *ngIf="mostrarFormulario == true">
     <h1>Contactanos:</h1>
-    <form [formGroup]="formulario" class="needs-validaton" novalidate>
+    <form [formGroup]="formulario" class="needs-validaton" (ngSubmit)="enviarDatos()" novalidate>
 
         <label for="nombreCompleto" class="form-label">Nombre Completo</label>
         <input type="text"  id="nombreCompleto" class="form-control" formControlName="nombreCompleto" placeholder="Nombre completo"
@@ -83,4 +84,14 @@
           </div>
         </div>
     </form>
+  </div>
+  <div>
+    <div class="col-md align-self-center text-center shadow" *ngIf="!mostrarFormulario">
+      <div class="row justify-content-center enviado">
+        <div class="col align-self-center">
+          <p>Gracias por contactarnos!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

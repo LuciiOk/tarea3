@@ -7,8 +7,9 @@ import { FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
   styleUrls: ['./customer-service.component.scss']
 })
 export class CustomerServiceComponent implements OnInit {
-
+  mostrarFormulario:boolean = true;
   formulario:FormGroup;
+  
   constructor(public Form:FormBuilder) {
       this.formulario = this.Form.group({
         nombreCompleto:['',[Validators.required]],
@@ -22,7 +23,8 @@ export class CustomerServiceComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  validacion(){
+  enviarDatos(){
+      this.mostrarFormulario = false;
       console.log(this.formulario.value);
   }
 }
